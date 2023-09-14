@@ -57,9 +57,9 @@ const Config = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Deportes Hoy',
+            title: 'Book Finder',
             filename: 'index.html',
-            template: path.join(__dirname, 'src/index.html'),
+            template: path.join(__dirname, 'public/index.html'),
             inject: 'body'
         }),
         new MiniCssExtractPlugin({
