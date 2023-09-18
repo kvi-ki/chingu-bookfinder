@@ -1,0 +1,38 @@
+.search {
+	display: flex;
+	justify-content: center;
+}
+
+.searchBar {
+	border: 0.002rem solid #000000;
+	height: 1.6rem;
+	width: 50%;
+	outline: none;
+	font-size: 0.85rem;
+	letter-spacing: 0.08rem;
+	color: #a9a9a9;
+	padding-left: 0.5rem;
+}
+
+.searchBar:focus {
+	border: 0.02rem solid #1e90ff;
+}
+
+.searchButton {
+	background-color: #3cb371;
+	width: 3.5rem;
+	color: #ffffff;
+	border: none;
+	font-size: 1rem;
+	letter-spacing: 0.08rem;
+}
+
+@media screen and (min-width: 800px) {
+	.searchBar {
+		height: 1.8rem;
+		font-size: 1rem;
+	}
+	.searchButton {
+		width: 5rem;
+	}
+}

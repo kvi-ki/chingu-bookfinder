@@ -1,7 +1,13 @@
+import './Search.css';
+
 export default function Search() {
 	return (
-		<div>
-			<input className='searchBar' type='text' placeholder='Start to type...' />
+		<div className='search'>
+			<input
+				className='searchBar'
+				type='search'
+				placeholder='Start to type...'
+			/>
 			<button className='searchButton'>Search</button>
 		</div>
 	);
