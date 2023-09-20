@@ -1,23 +1,14 @@
 import { useState } from 'react';
 import './Search.css';
+import BookFinder from '../../api/BookFinder';
 
 export default function Search() {
 	const [search, setSearch] = useState('');
 
-	function handleSearch(e: any) {
-		setSearch(e.target.value);
+	function handleSearch(event: any) {
+		setSearch(event.target.value);
+		BookFinder(event);
 	}
-
-	const getBooks = async () => {
-		const books = await fetch(
-			`https://www.googleapis.com/books/v1/volumes?q=` +
-				search +
-				`&key=AIzaSyDDWe8e7HlvckQteJSFzSXx0qVNG6t7xqQ`
-		);
-		const booksList = await books.json();
-
-		console.log(booksList);
-	};
 
 	return (
 		<div className='search'>
@@ -27,7 +18,7 @@ export default function Search() {
 				placeholder='Start to type...'
 				onKeyDown={handleSearch}
 			/>
-			<button className='searchButton' onClick={getBooks}>
+			<button className='searchButton' onClick={() => BookFinder(search)}>
 				Search
 			</button>
 		</div>
