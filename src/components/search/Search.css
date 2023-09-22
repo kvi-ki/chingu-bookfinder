@@ -9,7 +9,7 @@
 }
 
 .searchBar {
-	border: 0.002rem solid #000000;
+	border: 0.002rem solid #808080;
 	height: 1.6rem;
 	width: 50%;
 	outline: none;
@@ -17,6 +17,10 @@
 	letter-spacing: 0.08rem;
 	color: #a9a9a9;
 	padding-left: 0.5rem;
+}
+
+::placeholder {
+	color: #a9a9a9;
 }
 
 .searchBar:focus {
