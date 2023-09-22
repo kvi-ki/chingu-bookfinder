@@ -1,5 +1,5 @@
-import { useState } from 'react';
 import './Search.css';
+import { useState } from 'react';
 import BookCard from '../cards/BookCard';
 import { getBooks } from '../../api/books';
 
@@ -23,7 +23,7 @@ export default function Search() {
 		setSearch(event.target.value);
 	}
 
-	async function handleCall(search: any) {
+	async function handleBooks(search: any) {
 		const books = await getBooks(search);
 		setBooks(books.data.items);
 	}
@@ -34,10 +34,10 @@ export default function Search() {
 				<input
 					className='searchBar'
 					type='search'
-					placeholder='Start to type...'
-					onKeyDown={handleSearch}
+					placeholder='What book are you looking for?'
+					onKeyUp={handleSearch}
 				/>
-				<button className='searchButton' onClick={() => handleCall(search)}>
+				<button className='searchButton' onClick={() => handleBooks(search)}>
 					Search
 				</button>
 			</div>
