@@ -1,0 +1,29 @@
+.bookCard {
+	width: 25rem;
+	background-color: #ffffff;
+	display: flex;
+	flex-direction: row;
+	margin: 0rem 2rem 4rem 0rem;
+}
+
+.image {
+	width: 8rem;
+	height: 12rem;
+	position: relative;
+	margin: -2rem 2rem 4rem 1rem;
+}
+
+.info {
+}
+
+.title {
+}
+
+.author {
+}
+
+.publisher {
+}
+
+.link {
+}
