@@ -47,11 +47,7 @@ export default function Search() {
 					return (
 						<li key={book.id}>
 							<BookCard
-								image={
-									book.volumeInfo.imageLinks
-										? book.volumeInfo.imageLinks.smallThumbnail
-										: ''
-								}
+								image={book.volumeInfo.imageLinks?.smallThumbnail}
 								title={book.volumeInfo.title}
 								author={book.volumeInfo.authors}
 								publisher={book.volumeInfo.publisher}
