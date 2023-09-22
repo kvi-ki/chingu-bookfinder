@@ -1,9 +1,11 @@
 .bookCard {
 	width: 20rem;
+	height: 12rem;
 	background-color: #ffffff;
 	display: flex;
 	flex-direction: row;
-	margin: 0rem 2rem 4rem 0rem;
+	margin: 0 2rem 4rem 0;
+	padding-bottom: 0.5rem;
 	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.06), 0 3px 10px 0 rgba(0, 0, 0, 0.08);
 }
 
@@ -19,7 +21,7 @@
 }
 
 .title {
-	font-size: 1.4rem;
+	font-size: 1.1rem;
 	color: #808080;
 	margin-bottom: 0.3rem;
 }
@@ -33,7 +35,7 @@
 .publisher {
 	font-size: 0.9rem;
 	color: #a9a9a9;
-	margin: 0.2rem 0 0.2rem 0;
+	margin: 0.2rem 0;
 }
 
 .link {
@@ -42,7 +44,8 @@
 @media screen and (min-width: 800px) {
 	.bookCard {
 		width: 25rem;
-		margin: 1rem 1rem 2rem 0rem;
+		height: 15rem;
+		margin: 1rem 1rem 2rem 0;
 	}
 
 	.image {
@@ -52,7 +55,7 @@
 	}
 
 	.title {
-		font-size: 1.1rem;
+		font-size: 1.3rem;
 	}
 
 	.author {
@@ -67,6 +70,6 @@
 @media screen and (min-width: 1000px) {
 	.bookCard {
 		width: 25rem;
-		margin: 2rem 1rem 2rem 0rem;
+		margin: 2rem 1rem 2rem 0;
 	}
 }
