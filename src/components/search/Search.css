@@ -33,7 +33,7 @@
 	width: 20%;
 	color: #ffffff;
 	border: none;
-	font-size: 1rem;
+	font-size: 0.85rem;
 	letter-spacing: 0.08rem;
 }
 
@@ -53,5 +53,6 @@
 	}
 	.searchButton {
 		width: 5rem;
+		font-size: 1rem;
 	}
 }
