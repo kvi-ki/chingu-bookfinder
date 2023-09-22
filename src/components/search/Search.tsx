@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './Search.css';
 import BookCard from '../cards/BookCard';
-import { findBooks } from '../../api/BookFinder';
+import { getBooks } from '../../api/books';
 
 interface Book {
 	volumeInfo: {
@@ -24,7 +24,7 @@ export default function Search() {
 	}
 
 	async function handleCall(search: any) {
-		const books = await findBooks(search);
+		const books = await getBooks(search);
 		setBooks(books.data.items);
 	}
 
