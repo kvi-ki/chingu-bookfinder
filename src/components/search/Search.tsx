@@ -22,6 +22,9 @@ export default function Search() {
 
 	function handleSearch(event: any) {
 		setSearch(event.target.value);
+		if (event.key === 'Enter') {
+			handleBooks(search);
+		}
 	}
 
 	async function handleBooks(search: any) {
