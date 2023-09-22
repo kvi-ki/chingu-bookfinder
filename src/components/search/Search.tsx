@@ -4,6 +4,7 @@ import BookCard from '../cards/BookCard';
 import { getBooks } from '../../api/books';
 
 interface Book {
+	id: string;
 	volumeInfo: {
 		imageLinks: {
 			smallThumbnail: string;
@@ -44,7 +45,7 @@ export default function Search() {
 			<ul className='list'>
 				{books.map((book) => {
 					return (
-						<li>
+						<li key={book.id}>
 							<BookCard
 								image={
 									book.volumeInfo.imageLinks
