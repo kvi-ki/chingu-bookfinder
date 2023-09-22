@@ -28,26 +28,6 @@ export default function Search() {
 		setBooks(books.data.items);
 	}
 
-	console.log(`search ${search}`);
-
-	const booksList = books.map((book) => {
-		return (
-			<li>
-				<BookCard
-					image={
-						book.volumeInfo.imageLinks
-							? book.volumeInfo.imageLinks.smallThumbnail
-							: ''
-					}
-					title={book.volumeInfo.title}
-					author={book.volumeInfo.authors}
-					publisher={book.volumeInfo.publisher}
-					link={book.volumeInfo.infoLink}
-				/>
-			</li>
-		);
-	});
-
 	return (
 		<div className='container'>
 			<div className='search'>
@@ -61,7 +41,25 @@ export default function Search() {
 					Search
 				</button>
 			</div>
-			<ul className='list'>{booksList}</ul>
+			<ul className='list'>
+				{books.map((book) => {
+					return (
+						<li>
+							<BookCard
+								image={
+									book.volumeInfo.imageLinks
+										? book.volumeInfo.imageLinks.smallThumbnail
+										: ''
+								}
+								title={book.volumeInfo.title}
+								author={book.volumeInfo.authors}
+								publisher={book.volumeInfo.publisher}
+								link={book.volumeInfo.infoLink}
+							/>
+						</li>
+					);
+				})}
+			</ul>
 		</div>
 	);
 }
