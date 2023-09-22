@@ -1,29 +1,72 @@
 .bookCard {
-	width: 25rem;
+	width: 20rem;
 	background-color: #ffffff;
 	display: flex;
 	flex-direction: row;
 	margin: 0rem 2rem 4rem 0rem;
+	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.06), 0 3px 10px 0 rgba(0, 0, 0, 0.08);
 }
 
 .image {
-	width: 8rem;
-	height: 12rem;
+	width: 5.3rem;
+	height: 9rem;
 	position: relative;
-	margin: -2rem 2rem 4rem 1rem;
+	margin: -1rem 1rem 1rem 0.5rem;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .info {
 }
 
 .title {
+	font-size: 1.4rem;
+	color: #808080;
+	margin-bottom: 0.3rem;
 }
 
 .author {
+	font-size: 0.9rem;
+	color: #a9a9a9;
+	margin: 0;
 }
 
 .publisher {
+	font-size: 0.9rem;
+	color: #a9a9a9;
+	margin: 0.2rem 0 0.2rem 0;
 }
 
 .link {
+}
+
+@media screen and (min-width: 800px) {
+	.bookCard {
+		width: 25rem;
+		margin: 1rem 1rem 2rem 0rem;
+	}
+
+	.image {
+		width: 8rem;
+		height: 12rem;
+		margin: -1.6rem 1.5rem 3rem 0.8rem;
+	}
+
+	.title {
+		font-size: 1.1rem;
+	}
+
+	.author {
+		font-size: 0.9rem;
+	}
+
+	.publisher {
+		font-size: 0.9rem;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.bookCard {
+		width: 25rem;
+		margin: 2rem 1rem 2rem 0rem;
+	}
 }

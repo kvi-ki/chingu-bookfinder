@@ -35,7 +35,7 @@ export default function Search() {
 				<input
 					className='searchBar'
 					type='search'
-					placeholder='What book are you looking for?'
+					placeholder='What are you looking for?'
 					onKeyUp={handleSearch}
 				/>
 				<button className='searchButton' onClick={() => handleBooks(search)}>
