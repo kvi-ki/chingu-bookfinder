@@ -50,7 +50,11 @@ export default function Search() {
 								image={book.volumeInfo.imageLinks?.smallThumbnail}
 								title={book.volumeInfo.title}
 								author={book.volumeInfo.authors}
-								publisher={book.volumeInfo.publisher}
+								publisher={
+									book.volumeInfo.publisher
+										? book.volumeInfo.publisher
+										: 'Unknown'
+								}
 								link={book.volumeInfo.infoLink}
 							/>
 						</li>
