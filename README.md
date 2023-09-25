@@ -6,13 +6,13 @@ Book Finder is a single page application created for Chingu Voyage as a Solo Pro
 
 ## Tools
 
-- react
-- typescript
-- babel
-- webpack
-- axios
-- [Google API](https://developers.google.com/books/docs/overview)
-- pnpm
+* react
+* typescript
+* babel
+* webpack
+* axios
+* [Google API](https://developers.google.com/books/docs/overview)
+* pnpm
 
 ## Usage
 
