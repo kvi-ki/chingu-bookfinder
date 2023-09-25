@@ -1,5 +1,5 @@
 .header {
-	color: #808080;
+	color: var(--dark-grey-text);
 	text-align: center;
 	letter-spacing: 0.3rem;
 	margin-top: 2rem;

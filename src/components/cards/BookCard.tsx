@@ -18,7 +18,7 @@ export default function BookCard({
 	return (
 		<div className='bookCard'>
 			<img className='image' src={image} alt='book image' />
-			<div className='info'>
+			<div>
 				<h2 className='title'>{title}</h2>
 				<p className='author'>By: {author}</p>
 				<p className='publisher'>Published By: {publisher}</p>

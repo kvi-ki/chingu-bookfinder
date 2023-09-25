@@ -10,18 +10,18 @@
 }
 
 .searchBar {
-	border: 0.002rem solid #808080;
+	border: 0.002rem solid var(--dark-grey-text);
 	height: 1.6rem;
 	width: 60%;
 	outline: none;
 	font-size: 0.85rem;
 	letter-spacing: 0.08rem;
-	color: #a9a9a9;
+	color: var(--light-grey-text);
 	padding-left: 0.5rem;
 }
 
 ::placeholder {
-	color: #a9a9a9;
+	color: var(--light-grey-text);
 }
 
 .searchBar:focus {
@@ -31,7 +31,7 @@
 .searchButton {
 	background-color: #3cb371;
 	width: 20%;
-	color: #ffffff;
+	color: var(--white-background);
 	border: none;
 	font-size: 0.85rem;
 	letter-spacing: 0.08rem;

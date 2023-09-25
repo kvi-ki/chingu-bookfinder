@@ -1,3 +1,10 @@
+:root {
+	--light-grey-text: #a9a9a9;
+	--dark-grey-text: #808080;
+	--white-background: #ffffff;
+	--zero-nine-size: 0.9rem;
+}
+
 body {
 	background-color: #f5f5f5;
 }

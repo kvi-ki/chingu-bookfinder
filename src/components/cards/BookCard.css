@@ -1,7 +1,7 @@
 .bookCard {
 	width: 20rem;
 	height: 12rem;
-	background-color: #ffffff;
+	background-color: var(--white-background);
 	display: flex;
 	flex-direction: row;
 	margin: 0 2rem 4rem 0;
@@ -17,28 +17,22 @@
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.info {
-}
-
 .title {
 	font-size: 1.1rem;
-	color: #808080;
+	color: var(--dark-grey-text);
 	margin-bottom: 0.3rem;
 }
 
 .author {
-	font-size: 0.9rem;
-	color: #a9a9a9;
+	font-size: var(--zero-nine-size);
+	color: var(--light-grey-text);
 	margin: 0;
 }
 
 .publisher {
-	font-size: 0.9rem;
-	color: #a9a9a9;
+	font-size: var(--zero-nine-size);
+	color: var(--light-grey-text);
 	margin: 0.2rem 0;
-}
-
-.link {
 }
 
 @media screen and (min-width: 800px) {
@@ -59,11 +53,11 @@
 	}
 
 	.author {
-		font-size: 0.9rem;
+		font-size: var(--zero-nine-size);
 	}
 
 	.publisher {
-		font-size: 0.9rem;
+		font-size: var(--zero-nine-size);
 	}
 }
 
