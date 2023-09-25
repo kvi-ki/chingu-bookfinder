@@ -20,8 +20,8 @@ export default function BookCard({
 			<img className='image' src={image} alt='book image' />
 			<div>
 				<h2 className='title'>{title}</h2>
-				<p className='author'>By: {author}</p>
-				<p className='publisher'>Published By: {publisher}</p>
+				<p className='info'>By: {author}</p>
+				<p className='info'>Published By: {publisher}</p>
 				<a className='link' href={link} />
 			</div>
 		</div>

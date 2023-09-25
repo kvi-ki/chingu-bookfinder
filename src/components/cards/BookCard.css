@@ -23,13 +23,7 @@
 	margin-bottom: 0.3rem;
 }
 
-.author {
-	font-size: var(--zero-nine-size);
-	color: var(--light-grey-text);
-	margin: 0;
-}
-
-.publisher {
+.info {
 	font-size: var(--zero-nine-size);
 	color: var(--light-grey-text);
 	margin: 0.2rem 0;
@@ -52,12 +46,9 @@
 		font-size: 1.3rem;
 	}
 
-	.author {
+	.info {
 		font-size: var(--zero-nine-size);
-	}
-
-	.publisher {
-		font-size: var(--zero-nine-size);
+		margin: 0.4rem 0;
 	}
 }
 
