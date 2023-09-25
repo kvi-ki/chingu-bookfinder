@@ -29,7 +29,7 @@
 }
 
 .info {
-	font-size: var(--zero-nine-size);
+	font-size: 0.8rem;
 	color: var(--light-grey-text);
 	margin: 0 0 0.3rem 0;
 }
@@ -54,8 +54,8 @@
 
 @media screen and (min-width: 800px) {
 	.bookCard {
-		width: 25rem;
-		height: 15rem;
+		width: 30rem;
+		height: 16rem;
 		margin: 1rem 1rem 2rem 0;
 	}
 
@@ -67,17 +67,24 @@
 
 	.title {
 		font-size: 1.3rem;
+		margin: 0.4rem 0 0.7rem 0;
 	}
 
 	.info {
-		font-size: var(--zero-nine-size);
-		margin: 0.4rem 0;
+		font-size: 1.1rem;
+		margin: 0 0 0.5rem 0;
+	}
+
+	.bookButton {
+		width: 55%;
+		height: 2rem;
+		font-size: 1rem;
+		bottom: 0.8rem;
 	}
 }
 
 @media screen and (min-width: 1000px) {
 	.bookCard {
-		width: 25rem;
 		margin: 2rem 1rem 2rem 0;
 	}
 }
