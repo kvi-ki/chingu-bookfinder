@@ -17,7 +17,15 @@ export default function BookCard({
 }: Props) {
 	return (
 		<div className='bookCard'>
-			<img className='image' src={image} alt='book image' />
+			<img
+				className='image'
+				src={
+					image
+						? image
+						: 'https://books.google.es/googlebooks/images/no_cover_thumb.gif'
+				}
+				alt='book image'
+			/>
 			<div className='bookDetails'>
 				<h2 className='title'>{title}</h2>
 				<p className='info'>By: {author}</p>
