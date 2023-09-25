@@ -1,4 +1,4 @@
-# chingu-bookfinder
+# Book Finder App
 
 ## Description
 
@@ -18,12 +18,12 @@ Book Finder is a single page application created for Chingu Voyage as a Solo Pro
 
 To install all dependencies:
 
-### `pnpm i`
+#### `pnpm i`
 
 To build the app run:
 
-### `pnpm build`
+#### `pnpm build`
 
 To start the project use:
 
-### `pnpm start`
+#### `pnpm start`
