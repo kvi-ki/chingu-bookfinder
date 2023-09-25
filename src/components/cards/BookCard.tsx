@@ -18,11 +18,15 @@ export default function BookCard({
 	return (
 		<div className='bookCard'>
 			<img className='image' src={image} alt='book image' />
-			<div>
+			<div className='bookDetails'>
 				<h2 className='title'>{title}</h2>
 				<p className='info'>By: {author}</p>
 				<p className='info'>Published By: {publisher}</p>
-				<a className='link' href={link} />
+				<button className='bookButton'>
+					<a className='link' href={link}>
+						See this Book
+					</a>
+				</button>
 			</div>
 		</div>
 	);

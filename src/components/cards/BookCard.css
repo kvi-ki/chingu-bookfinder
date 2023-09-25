@@ -1,6 +1,6 @@
 .bookCard {
-	width: 20rem;
-	height: 12rem;
+	width: 21.5rem;
+	height: 11.5rem;
 	background-color: var(--white-background);
 	display: flex;
 	flex-direction: row;
@@ -17,16 +17,39 @@
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.bookDetails {
+	position: relative;
+	margin: 0.7rem 0.2rem 0.4rem 0;
+}
+
 .title {
-	font-size: 1.1rem;
+	font-size: 1rem;
 	color: var(--dark-grey-text);
-	margin-bottom: 0.3rem;
+	margin: 0 0 0.5rem 0;
 }
 
 .info {
 	font-size: var(--zero-nine-size);
 	color: var(--light-grey-text);
-	margin: 0.2rem 0;
+	margin: 0 0 0.3rem 0;
+}
+
+.bookButton {
+	position: absolute;
+	bottom: 0;
+	width: 60%;
+	height: 2rem;
+	background-color: var(--green-button);
+	font-size: 0.85rem;
+	letter-spacing: 0.08rem;
+	border: none;
+	border-radius: 0.7rem;
+	cursor: pointer;
+}
+
+.link {
+	text-decoration: none;
+	color: var(--white-background);
 }
 
 @media screen and (min-width: 800px) {
