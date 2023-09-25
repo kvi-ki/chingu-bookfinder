@@ -27,7 +27,7 @@ export default function Search() {
 		}
 	}
 
-	async function handleBooks(search: any) {
+	async function handleBooks(search: string) {
 		const books = await getBooks(search);
 		setBooks(books.data.items);
 	}
